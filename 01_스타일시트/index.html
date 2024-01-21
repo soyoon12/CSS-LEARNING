@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_CSS_구성하기_문법편</title>
+    <!-- 파일 덮어쓰기 우선순위 
+        : link 파일을 style 파일 위에 적용한것과 그반대의 경우
+
+        : 직접적용한것과 스타일 태그로 적용한것 차이 :중요 우선순위 순위
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+        p{
+            color: #f00 ;
+            background-color: #aff;
+        } 
+       
+    </style>
+</head>
+<body>
+
+    <!--  
+        <style>
+
+        p{
+            color: #f00 !important;
+            background-color: #aff;
+        } 
+        /* 직접적용한것과 스타일 태그로 적용한것 차이 :중요 우선순위 순위 */
+
+    </style> -->
+
+    <h2>스타일 시트의 종류</h2>
+    <h3>인라인 스타일시트</h3>
+
+    <!--00 00 ff = R G B-->
+    <p style="color: #0000ff; background-color: #ff9;">인라인 스타일시트 : 태그 내부에서 style이라는 속성을 선언하여
+    그 내부에서 스타일 선언명과 선언값으 각 태그마다 적용하고자 할때 사용</p>
+    
+    <h3>내부 스타일 시트</h3>
+    <p>내부 스타일 시트 : HTML문서 내부에 style 태그를 선언하여 해당하는
+        선택자에 스타일을 적용하고자 할 때 사용
+    </p>
+    <h3>외부 스타일 시트</h3>
+    <p>외부 스타일 시트 : HTML 문서 외부에 별도의 스타일을 선언하는 문서를 구성하여
+       스타일을 적용하고자 할 때 적용
+    </p>
+
+    <h3>스타일 시트의 우선순위</h3>
+    
+    <p>인라인 스타일 시트 > 내부 스타일 시트 
+       (내부 및 외부의 우선 순위는 마지막에 작성된 스타일의 영향을 받는다)
+    </p>
+
+    
+</body>
+</html>
